@@ -54,5 +54,5 @@ py dashboard.py
 
 The output will print the HTTP code, id of the new dashboards and URL
 ```
-Response code: 201, Id new dashboards: 156ace3d-ea3f-471a-b723-219a15c46fb3, URL new dashboard: https://my-dynatrace-tenant.live.dynatrace.com/#dashboard;id=156ace3d-ea3f-471a-b723-219a15c46fb3
+Response code: 201, Id new dashboards: 156ace3d-ea3f-471a-b723-219a15c46fb3, URL new dashboard: https://YOUR-DYNATRACE-CLUSTER-URL/#dashboard;id=156ace3d-ea3f-471a-b723-219a15c46fb3
 ```
