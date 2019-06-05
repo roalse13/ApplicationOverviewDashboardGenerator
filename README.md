@@ -56,3 +56,7 @@ The output will print the HTTP code, id of the new dashboards and URL
 ```
 Response code: 201, Id new dashboards: 156ace3d-ea3f-471a-b723-219a15c46fb3, URL new dashboard: https://YOUR-DYNATRACE-CLUSTER-URL/#dashboard;id=156ace3d-ea3f-471a-b723-219a15c46fb3
 ```
+
+## Limitations
+
+Entity must not be larger than 100000 bytes , this has been tested with a maximum of 48 Applications or dashboard subsections. If more are needed, the script should be modified to create two different dashboards.

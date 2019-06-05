@@ -6,6 +6,10 @@ Preconditions:
 	All Apps, Hosts, PG, Services and DB need to have an Application Tag
 	API Token: read and write configuration
 
+
+Limitations:
+Entity must not be larger than 100000 bytes - 48 Applications / dashboards subsecction
+
 """
 import requests, ssl, os, sys, json, copy
 
@@ -89,10 +93,13 @@ def postNewDashboard(newDashboardJson):
 	try:
 		r = requests.post(ENV + '/api/config/v1/dashboards', headers=HEADERS_POST, data=newDashboardJson)
 		res = r.json()
-		dashboard_url = ENV + "/#dashboard;id=" + res['id']
-		print()
-		print("Response code: %s, Id new dashboards: %s, URL new dashboard: %s" % (r.status_code, res['id'], dashboard_url))
-		print()
+		if r.status_code == 201:
+			dashboard_url = ENV + "/#dashboard;id=" + res['id']
+			print()
+			print("Response code: %s, Id new dashboards: %s, URL new dashboard: %s" % (r.status_code, res['id'], dashboard_url))
+			print()
+		else:
+			print("Error - Response code: %s , Response: %s"% (r.status_code, res))	
 	except ssl.SSLError:
 		print("SSL Error")
 
