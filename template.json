@@ -1,0 +1,171 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            2
+        ],
+        "clusterVersion": {
+          "major": 0,
+          "minor": 0,
+          "revision": 0,
+          "sourceRevision": "",
+          "timestamp": ""
+        }
+    },
+    "dashboardMetadata": {
+        "name": "NewExample_Dashboard",
+        "shared": false,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "l_2_HOURS",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "",
+            "tileType": "APPLICATIONS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "APPLICATION",
+                "customName": "",
+                "defaultName": "Tagged applications",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "APPLICATION": {
+                        "AUTO_TAGS": [
+                            "Spring-Pet⁈‼⁉%7C%7C%7CAll%7C%7C%7C"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 190,
+                "width": 190,
+                "height": 38
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "markdown": "## [links](APPNAME)"
+        },
+        {
+            "name": "",
+            "tileType": "HOSTS",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 152,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "HOST",
+                "customName": "Hosts",
+                "defaultName": "Hosts",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "HOST": {
+                        "AUTO_TAGS": [
+                            "Spring-Pet⁈‼⁉%7C%7C%7CAll%7C%7C%7C"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "SERVICES",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 304,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "SERVICE",
+                "customName": "Services",
+                "defaultName": "Services",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "AUTO_TAGS": [
+                            "Spring-Pet⁈‼⁉%7C%7C%7CAll%7C%7C%7C"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        },
+        {
+            "name": "",
+            "tileType": "DATABASES_OVERVIEW",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 456,
+                "width": 152,
+                "height": 152
+            },
+            "tileFilter": {
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "DATABASE",
+                "customName": "",
+                "defaultName": "Tagged databases",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "DATABASE": {
+                        "AUTO_TAGS": [
+                            "Spring-Pet⁈‼⁉%7C%7C%7CAll%7C%7C%7C"
+                        ]
+                    }
+                }
+            },
+            "chartVisible": true
+        }
+    ]
+}
