@@ -2,7 +2,7 @@
 
 This script will create a new Application Overview Dashboard, with multiple tiles for every Application monitored.
 
-![Dashboard example](img/Dashboard.png?raw=true "Dashboard example")
+![Dashboard example](img/Dashboard.PNG?raw=true "Dashboard example")
 
 
 ## Getting Started
