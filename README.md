@@ -19,9 +19,6 @@ Dynatrace API Token
 
 Dashboard template - provided in this repo [template.json](template.json) (the tiles will be replicated in the new dahsboard) 
 
-```
-Give examples
-```
 
 ### Generate Dynatrace API token
 
